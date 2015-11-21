@@ -1,4 +1,4 @@
-For workign with Arduino Inputs to provide Easier access to data processing and calibration
+For working with Arduino Inputs to provide easier, faster access to standard data processing and calibration routines
 
 This is originally put together by A. Quitmeyer from Comingle.io  2015 - Public Domain
 with additional hacking on some open source simple examples by 
