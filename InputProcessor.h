@@ -87,7 +87,7 @@ class InputProcessor
 
 
     void clearBuffer();
-    void addValue(float);
+    void addValue(int);
     void fillValue(float, int);
 
     float getAverage();//get avg of the whole buffer

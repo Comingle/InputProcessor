@@ -25,7 +25,7 @@ InputProcessor::InputProcessor(int buffersize, int thepin) // if no pin
 {
 
   _size = buffersize;
-  _ar = (float*) malloc(_size * sizeof(float));
+  _ar = (int*) malloc(_size * sizeof(int));
   if (_ar == NULL) _size = 0;
   clearBuffer();
 
@@ -192,7 +192,7 @@ void InputProcessor::clearBuffer()
 }
 
 // adds a new value to the data-set
-void InputProcessor::addValue(float f)
+void InputProcessor::addValue(int f)
 {
   if (_ar == NULL) return;
   _sum -= _ar[_idx];
@@ -278,7 +278,7 @@ int InputProcessor::getscaledDerivative() {
 // fill the average with a value
 // the param number determines how often value is added (weight)
 // number should preferably be between 1 and size
-void InputProcessor::fillValue(float value, int number)
+void InputProcessor::fillValue(int value, int number)
 {
   clearBuffer();
   for (int i = 0; i < number; i++)
